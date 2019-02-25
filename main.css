@@ -1,0 +1,20 @@
+#image-list {
+    padding: 0px;
+}
+
+#image-list li {
+    list-style-type: none;
+    border: 1px solid black;
+    /* display: inline-block; */
+    margin-left: 8px;
+    margin-bottom: 8px;
+    padding: 8px;
+    float: left;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+}
+
+#image-list img {
+    width: 100%;
+}
