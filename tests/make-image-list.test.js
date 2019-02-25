@@ -1,19 +1,7 @@
 import images from '../data/images.js';
+import makeImageTemplate from '../src/make-image-list.js';
 const test = QUnit.test;
 
-
-function makeImageTemplate(image) {
-    const html = /*html */`<li>
-            <h2>
-                ${image.title}
-            </h2>
-            <img src="${image.url}">
-        </li>`;
-    
-    const template = document.createElement('template');
-    template.innerHTML = html;
-    return template.content; 
-}
 
 test('call template function that generates the html template', assert => {
     //arrange
